@@ -1,5 +1,8 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cyber Fits</title>
     <style>
         body {  
@@ -26,42 +29,46 @@
             width: 30%;
             height: auto;
         }
+
         .button-group {
-      display: flex;
-      justify-content: center;
-      margin-top: 1rem; 
+            display: flex;
+            justify-content: center;
+            margin-top: 1rem; 
         }
-    .button-group a {
-      display: inline-block;
-      margin: 0 10px;
-      padding: 2px 20px;
-      background-color: #ffffff;
-      color: #343333;
-      border: 5px solid #ffffff;
-      text-decoration: none;
-      text-align: center;
-      font-size: 14px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-    .button-group a:hover {
-      background-color: #f0f0f0;
-    }
+
+        .button-group a {
+            display: inline-block;
+            margin: 0 10px;
+            padding: 2px 20px;
+            background-color: #ffffff;
+            color: #343333;
+            border: 5px solid #ffffff;
+            text-decoration: none;
+            text-align: center;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .button-group a:hover {
+            background-color: #f0f0f0;
+        }
+
         .login-btn {
-      position: absolute;
-      top: 6%;
-      right: 1rem;
-      
-      background: none;
-      border: none;
-      cursor: pointer;
-    }
-    .login-btn img {
-      width: 27px;
-      height: 27px;
-    } 
-    
-    .hamburger {
+            position: absolute;
+            top: 6%;
+            right: 1rem;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .login-btn img {
+            width: 27px;
+            height: 27px;
+        } 
+        
+        .hamburger {
             position: absolute;
             top: 10px;
             left: 30px;
@@ -75,6 +82,7 @@
             width: 60px;
             height: 80px;
         }
+
         .close-btn {
             position: absolute;
             top: 10px;
@@ -84,6 +92,7 @@
             cursor: pointer;
             z-index: 101; 
         }
+
         .close-btn img {
             width: 60px;
             height: 80px;
@@ -125,6 +134,7 @@
             position: relative;
             z-index: 99; 
         }
+
         .carousel-track {
             display: flex;
             transition: transform 0.3s ease-in-out;
@@ -155,6 +165,7 @@
             padding: 2em;
             text-align: center;
         }
+
         .shop-btn {
             position: absolute;
             top: 40px;
@@ -167,20 +178,23 @@
             cursor: pointer;
             z-index: 1; 
         }
+
         footer {
             background-color: #333;
             color: #fff;
             padding: 0.5rem 0;
             text-align: center;
         }
-        * {
-  margin: 0;
-  padding: 0;
-}
 
-    @media (max-width: 390px) {
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Media Query for iPhone 12 */
+        @media (max-width: 390px) {
             header img {
-                width: 70%;
+                width: 50%;
             }
 
             .nav-menu {
@@ -191,8 +205,9 @@
             }
 
             .shop-now {
-                font-size: 20px;
-                padding: 10px 0;
+                border: none;
+                font-size: 10px;
+                padding: 10px 10px;
             }
 
             .carousel img {
@@ -209,13 +224,13 @@
             }
 
             .shop-btn {
-                padding: 15px 35px;
+                padding: 20px 20px;
                 font-size: 0.8rem;
             }
 
             .login-btn {
                 top: 5%;
-                right: 5%;
+                right: 3%;
             }
 
             .hamburger,
@@ -228,11 +243,10 @@
 
             .hamburger img,
             .close-btn img {
-                width: 40px;
-                height: 40px;
+                width: 30px;
+                height: 30px;
             }
-        }     
-        
+        }
     </style>
 </head>
 <body>
@@ -256,7 +270,7 @@
         </a>
         <button class="login-btn" onclick="location.href='login.html'">
             <img src="login.jpg" alt="Login">
-            
+        </button>
     </header>
     <div class="button-group">
         <a href="index.html" class="home-btn">HOME</a>
@@ -264,8 +278,8 @@
         <a href="dress.html" class="about-btn">DRESS</a>
         <a href="shopp.html" class="about-btn">SHOP ALL</a>
         <a href="about.html" class="about-btn">ABOUT US</a>
-      </div>
-      <div class="carousel">
+    </div>
+    <div class="carousel">
         <div class="shop-btn" onclick="location.href='shopp.html'">Shop Now</div>
         <div class="carousel-track">
             <img src="img1.jpg" alt="Image 4">
@@ -274,7 +288,6 @@
             <img src="img4.jpg" alt="Image 3">
         </div>
     </div>
-    
     <div class="container">
         <h2>Shop Our Collection</h2>
         <p>Find the best products at the best prices.</p>
@@ -302,3 +315,4 @@
     </script>
 </body>
 </html>
+
