@@ -1,11 +1,15 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>About Us - Cyber Fits</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page - Cyber Fits</title>
     <style>
-        body {  
+        body {
             font-family: Arial, sans-serif;
+            background-color: #ffffff;
             margin: 0;
-            padding: 0;
+            padding: 20px;
         }
 
         header {
@@ -26,6 +30,12 @@
             width: 30%;
             height: auto;
         }
+        .button-group {
+      display: flex;
+      justify-content: center;
+      margin-top: 1rem; 
+        }
+
         .login-btn {
       position: absolute;
       top: 6%;
@@ -98,11 +108,6 @@
         }
 
 
-        .button-group {
-      display: flex;
-      justify-content: center;
-      margin-top: 1rem; 
-        }
     .button-group a {
       display: inline-block;
       margin: 0 10px;
@@ -119,7 +124,16 @@
     .button-group a:hover {
       background-color: #f0f0f0;
     }
-    h1 {
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 0.5rem 0;
+            text-align: center;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+        }
+        h1 {
         text-align: center;
         font-size: 60px;
 
@@ -165,55 +179,57 @@
             box-sizing: border-box;
         }
 
-        /* Media Query for iPhone 12 */
-        @media (max-width: 390px) {
-            header img {
-                width: 50%;
-        
-            }
+ @media (max-width: 428px) {
 
-            .button-group {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .button-group a {
-                margin-bottom: 10px;
-            }
-
-            .shop-btn {
-                padding: 20px 20px;
-                font-size: 0.8rem;
-            }
-
-            .login-btn {
-                top: 5%;
-                right: 3%;
-            }
-
-            .nav-menu {
-                top: 5%;
-                left: 17%;
-                width: 40%;
-                height: auto;
-            }
-
-            .hamburger,
-           .close-btn {
-                top: 3.9%;
-                left: 7%;
-                width: 30px;
-                height: 30px;
-            }
-
-            .hamburger img,
-            .close-btn img {
-                width: 40px;
-                height: 40px;
-            }
+header img {
+    width: 50%;
+}
+.button-group {
+    display: flex;
+    flex-wrap: wrap; /* Ensure buttons wrap to next line if space is limited */
+    justify-content: center;
+    margin-top: 1rem;
+    padding: 2px 2px; /* Adjust padding to make buttons smaller */
+    margin: none;
+    }
+.nav-menu {
+    
+    top: 5%;
+    left: 17%;
+    width: 40%;
+    height: auto;
+}
+}
+.hamburger,
+        .close-btn {
+            top: 3.9%;
+            left: 7%;
+            width: 30px;
+            height: 30px;
         }
-    </style>
-</head>
+
+        .hamburger img,
+        .close-btn img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .login-btn {
+            top: 5%;
+            right: 8%;
+        }
+
+        footer {
+        background-color: #333;
+        color: #fff;
+        padding: 0.2rem 0.1rem;
+        text-align: center;
+        font-size: 7px;
+        width: 100%;
+        position: fixed;
+        bottom: 8;
+    }
+</style>
 <body>
     <header>
         <div class="hamburger" onclick="toggleMenu()">
@@ -285,3 +301,4 @@
     </script>
 </body>
 </html>
+
