@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<head>
+    <title>Product Page - Cyber Fits</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #ffffff;
+            text-align: center;
+            overflow: hidden;
+            width: 100%;
+            padding: 10px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        header a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        header img {
+            width: 30%;
+            height: auto;
+        }
+
+        .login-btn {
+      position: absolute;
+      top: 6%;
+      right: 2rem;
+      
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+    .login-btn img {
+      width: 27px;
+      height: 27px;
+    } 
+
+        .hamburger {
+            position: absolute;
+            top: 10px;
+            left: 30px;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            z-index: 101;
+        }
+
+        .hamburger img {
+            width: 60px;
+            height: 80px;
+        }
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            left: 30px;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            z-index: 101; 
+        }
+        .close-btn img {
+            width: 60px;
+            height: 80px;
+        }
+
+        .nav-menu {
+            display: none;
+            position: absolute;
+            top: 2%;
+            left: 9%;
+            width: 30%;
+            height: 44%;
+            background-color: #303030;
+            z-index: 102;
+            text-align: center;
+        }
+
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 10px 0;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        .shop-now {
+            background-color: white;
+            padding: 20px 0;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            border: 2px solid #333;
+        }
+
+        .button-group {
+      display: flex;
+      justify-content: center;
+      margin-top: 1rem; 
+        }
+    .button-group a {
+      display: inline-block;
+      margin: 0 10px;
+      padding: 2px 20px;
+      background-color: #ffffff;
+      color: #343333;
+      border: 5px solid #ffffff;
+      text-decoration: none;
+      text-align: center;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .button-group a:hover {
+      background-color: #f0f0f0;
+    }
+        .product-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .product-card {
+            background-color: #ffffff;
+            border-radius: 19px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .product-card img {
+            width: 100%;
+            max-width: 200px;
+            height: 100;
+            margin-bottom: 10px;
+            
+        }
+
+        .product-card h3 {
+            color: #333333;
+            margin-bottom: 15px;
+        }
+
+        .product-card p {
+            color: #666666;
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+
+        .product-card .price {
+            font-weight: bold;
+            color: #000000;
+            font-size: 18px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 0.5rem 0;
+            text-align: center;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="hamburger" onclick="toggleMenu()">
+            <img src="bunny.jpg" alt="Menu">
+        </div>
+        <div class="close-btn" onclick="toggleMenu()">
+            <img src="bunny.jpg" alt="Close">
+        </div>
+        <div class="nav-menu" id="nav-menu">
+            <div class="shop-now">SHOP NOW</div>
+            <a href="index.html">Home</a>
+            <a href="shopp.html">Shop All</a>
+            <a href="dress.html">Dress</a>
+            <a href="product.html">New</a>
+            <a href="about.html">About Us</a>
+        </div>
+        <a href="index.html">
+            <img src="cyber.png" alt="Cyber Fits">
+        </a>
+        <button class="login-btn" onclick="location.href='login.html'">
+            <img src="login.jpg" alt="Login">
+    </header>
+    <div class="button-group">
+        <a href="index.html" class="home-btn">HOME</a>
+        <a href="product.html" class="new-btn">NEW</a>
+        <a href="dress.html" class="about-btn">DRESS</a>
+        <a href="shopp.html" class="about-btn">SHOP ALL</a>
+        <a href="about.html" class="about-btn">ABOUT US</a>
+      </div>
+    <div class="product-container">
+        
+        <div class="product-card">
+            <img src="Louis Vuitton_ Vinyl Bust Tweed Dress.jpeg" alt="Dress 1">
+            <h3>Vinyl Bust Tweed Dress</h3>
+            <p>Pairing a gold chain belt with a black ponte mini dress - this two-piece set will make sure you’re the star of any and all occasions.</p>
+            <p class="price">$599.99</p>
+        </div>
+        
+        <div class="product-card">
+            <img src="download (13).jpeg" alt="Dress 3">
+            <h3> Disel Dress</h3>
+            <p>Unleash your urban edge with our Graphic Diesel Tank Top: where bold designs meet rugged style, fueling your look with fearless energy./p>
+            <p class="price">$649.49</p>
+        </div>
+
+        <div class="product-card">
+            <img src="Dress (1).jpeg" alt="Dress 3">
+            <h3>Grey Shift Dress</h3>
+            <p>Step into cyber-chic elegance with our Grey Shift Dress, where minimalism meets avant-garde style for the modern trendsetter.</p>
+            <p class="price">$849.39</p>
+        </div> 
+
+        <div class="product-card">
+            <img src="download (12).jpeg" alt="Dress 3">
+            <h3>Demin Mini Dress</h3>
+            <p> Perfect for the cyberpunk fashionista, this top seamlessly blends modern edge with classic cool. Slip into this versatile piece and own the night, every night.</p>
+            <p class="price">$199.99</p>
+        </div>
+
+        <div class="product-card">
+            <img src="Designer Clothes, Shoes & Bags for Women _ SSENSE.jpeg" alt="Dress 2">
+            <h3>SSENSE Dress</h3>
+            <p>Unleash your inner futurist with the Geometric Mi Dress, where sleek lines meet bold shapes in a symphony of cyberpunk style.</p>
+            <p class="price">$429.99</p>
+        </div>
+
+        <div class="product-card">
+            <img src="Dolls Kill x Daria 90s Cartoon MTV Oversized Cardigan - Green.jpeg" alt="Dress 3">
+            <h3>MTV Oversized Cardigan</h3>
+            <p>Embrace the future with our MTV Oversized Cardigan, where cutting-edge style meets unparalleled comfort.</p>
+            <p class="price">$649.99</p>
+        </div>
+
+        <div class="product-card">
+            <img src="Clothing fashion.jpeg" alt="Dress 3">
+            <h3>Geometric Midi Dress</h3>
+            <p>Unleash your inner futurist with the Geometric Mi Dress, where sleek lines meet bold shapes in a symphony of cyberpunk style.</p>
+            <p class="price">$849.99</p>
+        </div>
+
+        <div class="product-card">
+            <img src="Women's Rebel Ecru White Dress _ Large _ Aggi.jpeg" alt="Dress 3">
+            <h3>Ecru White Dress</h3>
+            <p>Fitted mini dress with shoulder line accentuated with cushions. The semicircular cut sensually reveals the body - a flower with a futuristic line. </p>
+            <p class="price">$799.99</p>
+        </div>
+        <div class="product-card">
+            <img src="Luxury fashion & independent designers _ SSENSE.jpeg" alt="Dress 3">
+            <h3>Eshe Sheer Knit Dress</h3>
+            <p>Eshe Sheer Silver Metallic Knitted Mini Dress liked on Polyvore featuring short brown sheer mini dress with flared bell sleeve</p>
+            <p class="price">$850.59</p>
+        </div>
+
+        
+       
+    </div>
+    <footer>
+        <p>&copy; 2024 Cyber Fits. All rights reserved.</p>
+    </footer>
+    <script>
+        // Function to toggle the navigation menu
+        function toggleMenu() {
+            var menu = document.getElementById('nav-menu');
+            var hamburger = document.querySelector('.hamburger');
+            var closeBtn = document.querySelector('.close-btn');
+
+            if (menu.style.display === 'block') {
+                menu.style.display = 'none';
+                hamburger.style.display = 'block';
+                closeBtn.style.display = 'none';
+            } else {
+                menu.style.display = 'block';
+                hamburger.style.display = 'none';
+                closeBtn.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>

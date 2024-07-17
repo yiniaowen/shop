@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<head>
+    <title>Cyber Fits</title>
+    <style>
+        body {  
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #ffffff;
+            text-align: center;
+            overflow: hidden;
+            width: 100%;
+            padding: 10px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        header a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        header img {
+            width: 30%;
+            height: auto;
+        }
+        .button-group {
+      display: flex;
+      justify-content: center;
+      margin-top: 1rem; 
+        }
+    .button-group a {
+      display: inline-block;
+      margin: 0 10px;
+      padding: 2px 20px;
+      background-color: #ffffff;
+      color: #343333;
+      border: 5px solid #ffffff;
+      text-decoration: none;
+      text-align: center;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .button-group a:hover {
+      background-color: #f0f0f0;
+    }
+        .login-btn {
+      position: absolute;
+      top: 6%;
+      right: 1rem;
+      
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+    .login-btn img {
+      width: 27px;
+      height: 27px;
+    } 
+    
+    .hamburger {
+            position: absolute;
+            top: 10px;
+            left: 30px;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            z-index: 101;
+        }
+
+        .hamburger img {
+            width: 60px;
+            height: 80px;
+        }
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            left: 30px;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            z-index: 101; 
+        }
+        .close-btn img {
+            width: 60px;
+            height: 80px;
+        }
+
+        .nav-menu {
+            display: none;
+            position: absolute;
+            top: 2%;
+            left: 9%;
+            width: 30%;
+            height: 44%;
+            background-color: #303030;
+            z-index: 102;
+            text-align: center;
+        }
+
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 10px 0;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .shop-now {
+            background-color: white;
+            padding: 20px 0;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            border: 2px solid #333;
+        }
+
+        .carousel {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            z-index: 99; 
+        }
+        .carousel-track {
+            display: flex;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .carousel img {
+            width: 100%;
+            flex-shrink: 0;
+        }
+
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            20% { transform: translateX(0); }
+            25% { transform: translateX(-100%); }
+            45% { transform: translateX(-100%); }
+            50% { transform: translateX(-200%); }
+            70% { transform: translateX(-200%); }
+            75% { transform: translateX(-300%); }
+            95% { transform: translateX(-300%); }
+            100% { transform: translateX(0); }
+        }
+
+        .carousel-track {
+            animation: slide 10s infinite;
+        }
+
+        .container {
+            padding: 2em;
+            text-align: center;
+        }
+        .shop-btn {
+            position: absolute;
+            top: 40px;
+            left: 30px;
+            background-color: #434242;
+            color: #ffffff;
+            border: 2px solid #ffffff; 
+            padding: 30px 70px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            z-index: 1; 
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 0.5rem 0;
+            text-align: center;
+        }
+        * {
+  margin: 0;
+  padding: 0;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="hamburger" onclick="toggleMenu()">
+            <img src="bunny.jpg" alt="Menu">
+        </div>
+        <div class="close-btn" onclick="toggleMenu()">
+            <img src="bunny.jpg" alt="Close">
+        </div>
+        <div class="nav-menu" id="nav-menu">
+            <div class="shop-now">SHOP NOW</div>
+            <a href="index.html">Home</a>
+            <a href="shopp.html">Shop All</a>
+            <a href="dress.html">Dress</a>
+            <a href="product.html">New</a>
+            <a href="about.html">About Us</a>
+        </div>
+        <a href="index.html">
+            <img src="cyber.png" alt="Cyber Fits">
+        </a>
+        <button class="login-btn" onclick="location.href='login.html'">
+            <img src="login.jpg" alt="Login">
+            
+    </header>
+    <div class="button-group">
+        <a href="index.html" class="home-btn">HOME</a>
+        <a href="product.html" class="new-btn">NEW</a>
+        <a href="dress.html" class="about-btn">DRESS</a>
+        <a href="shopp.html" class="about-btn">SHOP ALL</a>
+        <a href="about.html" class="about-btn">ABOUT US</a>
+      </div>
+      <div class="carousel">
+        <div class="shop-btn" onclick="location.href='shopp.html'">Shop Now</div>
+        <div class="carousel-track">
+            <img src="img1.jpg" alt="Image 4">
+            <img src="img2.jpg" alt="Image 1">
+            <img src="img3.jpg" alt="Image 2">
+            <img src="img4.jpg" alt="Image 3">
+        </div>
+    </div>
+    
+    <div class="container">
+        <h2>Shop Our Collection</h2>
+        <p>Find the best products at the best prices.</p>
+    </div>
+    <footer>
+        <p>&copy; 2024 Cyber Fits. All rights reserved.</p>
+    </footer>
+    <script>
+        // Function to toggle the navigation menu
+        function toggleMenu() {
+            var menu = document.getElementById('nav-menu');
+            var hamburger = document.querySelector('.hamburger');
+            var closeBtn = document.querySelector('.close-btn');
+
+            if (menu.style.display === 'block') {
+                menu.style.display = 'none';
+                hamburger.style.display = 'block';
+                closeBtn.style.display = 'none';
+            } else {
+                menu.style.display = 'block';
+                hamburger.style.display = 'none';
+                closeBtn.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>

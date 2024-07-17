@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<head>
+    <title>About Us - Cyber Fits</title>
+    <style>
+        body {  
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #ffffff;
+            text-align: center;
+            overflow: hidden;
+            width: 100%;
+            padding: 10px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        header a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        header img {
+            width: 30%;
+            height: auto;
+        }
+        .login-btn {
+      position: absolute;
+      top: 6%;
+      right: 2rem;
+      
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+    .login-btn img {
+      width: 27px;
+      height: 27px;
+    } 
+
+        .hamburger {
+            position: absolute;
+            top: 10px;
+            left: 30px;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            z-index: 101;
+        }
+
+        .hamburger img {
+            width: 60px;
+            height: 80px;
+        }
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            left: 30px;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            z-index: 101; 
+        }
+        .close-btn img {
+            width: 60px;
+            height: 80px;
+        }
+
+        .nav-menu {
+            display: none;
+            position: absolute;
+            top: 2%;
+            left: 9%;
+            width: 30%;
+            height: 44%;
+            background-color: #303030;
+            z-index: 102;
+            text-align: center;
+        }
+
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 10px 0;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        .shop-now {
+            background-color: white;
+            padding: 20px 0;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            border: 2px solid #333;
+        }
+
+
+        .button-group {
+      display: flex;
+      justify-content: center;
+      margin-top: 1rem; 
+        }
+    .button-group a {
+      display: inline-block;
+      margin: 0 10px;
+      padding: 2px 20px;
+      background-color: #ffffff;
+      color: #343333;
+      border: 5px solid #ffffff;
+      text-decoration: none;
+      text-align: center;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .button-group a:hover {
+      background-color: #f0f0f0;
+    }
+    h1 {
+        text-align: center;
+        font-size: 60px;
+
+    }
+
+        .about-container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            width: 80%;
+            max-width: 800px;
+            margin: 20px auto;
+            text-align: justify;
+        }
+
+        .about-container h2 {
+            margin-bottom: 20px;
+            color: #333333;
+        }
+
+        .about-container p {
+            line-height: 1.6;
+            color: #666666;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 0.5rem 0;
+            text-align: center;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="hamburger" onclick="toggleMenu()">
+            <img src="bunny.jpg" alt="Menu">
+        </div>
+        <div class="close-btn" onclick="toggleMenu()">
+            <img src="bunny.jpg" alt="Close">
+        </div>
+        <div class="nav-menu" id="nav-menu">
+            <div class="shop-now">SHOP NOW</div>
+            <a href="index.html">Home</a>
+            <a href="shopp.html">Shop All</a>
+            <a href="dress.html">Dress</a>
+            <a href="product.html">New</a>
+            <a href="about.html">About Us</a>
+        </div>
+        <a href="index.html">
+            <img src="cyber.png" alt="Cyber Fits">
+        </a>
+        <button class="login-btn" onclick="location.href='login.html'">
+            <img src="login.jpg" alt="Login">
+    </header>
+    <div class="button-group">
+        <a href="index.html" class="home-btn">HOME</a>
+        <a href="product.html" class="new-btn">NEW</a>
+        <a href="dress.html" class="about-btn">DRESS</a>
+        <a href="shopp.html" class="about-btn">SHOP ALL</a>
+      </div>
+    <div class="about-container">
+        <h1>About Us</h1>
+        <br>
+        <br>
+        <br>
+       <h3>Welcome to Cyber Fits</h3> 
+        <p>Welcome to Cyber Fits, where fashion meets the future. Our brand is inspired by the vibrant and dynamic aesthetics of cyberpunk culture, blending technology with style to create a unique and bold statement in the world of fashion.</p>
+        <br>
+       <h3>Our Mission and Vision</h3>
+        <p>At Cyber Fits, our mission is to redefine contemporary fashion by embracing the spirit of innovation and rebellion found in cyberpunk ethos. We strive to push the boundaries of traditional fashion norms and offer our customers an unparalleled experience in futuristic apparel.</p>
+        <br>
+       <h3>Our Inspiration</h3> 
+       <p> Our journey began with a deep-rooted passion for cyberpunk culture—a genre that explores themes of advanced technology, dystopian futures, and radical societal change. This inspiration fuels our creativity and drives us to design clothing that resonates with the essence of cyberpunk worlds.</p>
+        <br>
+       <h3>The Cyber Fits Experience</h3> 
+        <p>Each garment at Cyber Fits is crafted with meticulous attention to detail, reflecting the intricate and visionary landscapes of cyberpunk settings. Our collection features a diverse range of pieces, from sleek cyber jackets to luminous accessories and avant-garde apparel.</p>
+        <br>
+        <h3>Join Us in Embracing the Future</h3>
+        <p>Whether you're an avid cyberpunk enthusiast or someone who appreciates cutting-edge fashion, Cyber Fits invites you to explore our curated selection and discover a new realm of style possibilities. Join us in embracing the future of fashion and redefine what it means to dress for the cyber age.</p>
+    </div>
+    <footer>
+        <p>&copy; 2024 Cyber Fits. All rights reserved.</p>
+    </footer>
+    <script>
+        // Function to toggle the navigation menu
+        function toggleMenu() {
+            var menu = document.getElementById('nav-menu');
+            var hamburger = document.querySelector('.hamburger');
+            var closeBtn = document.querySelector('.close-btn');
+
+            if (menu.style.display === 'block') {
+                menu.style.display = 'none';
+                hamburger.style.display = 'block';
+                closeBtn.style.display = 'none';
+            } else {
+                menu.style.display = 'block';
+                hamburger.style.display = 'none';
+                closeBtn.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>

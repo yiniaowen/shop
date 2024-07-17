@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+    <title>Hiiiiii</title>
+    <style>
+        p {
+            text-align: center;
+            font-size: 32px;
+            font-family: sans-serif;
+            background-color: blanchedalmond;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            width: 25%;
+        }
+        #botao1, #botao2 {
+            font-size: 24px;
+            padding: 15px 30px;
+        }
+        #botao1 {
+            position: fixed;
+            top: 72%;
+            left: 56%;
+            transform: translate(-50%, -50%);
+        }
+        #botao2 {
+            position: absolute;
+            left: 37%;
+            top: 68%;
+        }
+    </style>
+</head>
+<body bgcolor="pink">
+    <p>Are you GAY?</p>
+    <img src="c:\Users\saemi\Desktop\Coding Images\download (14).jpeg" alt="Image">
+    <button id="botao1">YES I AM :D</button>
+    <button id="botao2">NO</button>
+
+    <script>
+        const button2 = document.getElementById('botao2');
+        let left = 40;
+        button2.addEventListener('mouseover', function() {
+            if (left === 40) {
+                left = 44;
+            } else if (left === 44) {
+                left = 67;
+            } else {
+                left = 40;
+            }
+            this.style.left = left + '%';
+        });
+
+        document.getElementById('botao1').addEventListener('click', function() {
+            alert('CONGRATULATIONS YOU ARE NOW A CERTIFIED GAY !!!');
+        });
+    </script>
+</body>
+</html>
