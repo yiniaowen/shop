@@ -188,59 +188,76 @@
 
         
         /* Media Query for iPhone 12 */
-        @media (max-width: 390px) {
-            header img {
-                width: 50%;
-            }
-            .shop-now {
-                border: none;
-                font-size: 10px;
-                padding: 10px 10px;
-            }
+        @media (max-width: 428px) {
 
-            .carousel img {
-                width: 100%;
-            }
+header img {
+    width: 50%;
+}
+.button-group {
 
-            .button-group {
-                flex-direction: column;
-                align-items: center;
-            }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 30vh; 
+    cursor: pointer;
+    margin: none;
+    }
 
-            .button-group a {
-                margin-bottom: 10px;
-            }
+    .carousel img {
+     width: 100%;
+    }
 
-            .shop-btn {
-                padding: 20px 20px;
-                font-size: 0.8rem;
-            }
+    .shop-btn {
+            position: absolute;
+            top: 40px;
+            left: 30px;
+            background-color: #434242;
+            color: #ffffff;
+            border: 2px solid #ffffff; 
+            padding: 10px 30px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            z-index: 1; 
+        }
 
-            .login-btn {
-                top: 5%;
-                right: 3%;
-            }
+.nav-menu {
+    
+    top: 5%;
+    left: 17%;
+    width: 40%;
+    height: auto;
+}
+}
+.hamburger,
+        .close-btn {
+            top: 2%;
+            left: 7%;
+            width: 30px;
+            height: 30px;
+        }
 
-            .nav-menu {
-                top: 5%;
-                left: 17%;
-                width: 40%;
-                height: auto;
-            }
+        .hamburger img,
+        .close-btn img {
+            width: 40px;
+            height: 40px;
+        }
 
-            .hamburger,
-           .close-btn {
-                top: 3.9%;
-                left: 7%;
-                width: 30px;
-                height: 30px;
-            }
+        .login-btn {
+            top: 3%;
+            right: 8%;
+        }
 
-            .hamburger img,
-            .close-btn img {
-                width: 40px;
-                height: 40px;
-            }
+        footer {
+        background-color: #333;
+        color: #fff;
+        padding: 0.2rem 0.1rem;
+        text-align: center;
+        font-size: 7px;
+        width: 100%;
+        position: fixed;
+        bottom: 8;
+    }
     </style>
 </head>
 <body>
