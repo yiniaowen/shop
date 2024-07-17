@@ -164,6 +164,54 @@
             padding: 0;
             box-sizing: border-box;
         }
+
+        /* Media Query for iPhone 12 */
+        @media (max-width: 390px) {
+            header img {
+                width: 50%;
+        
+            }
+
+            .button-group {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .button-group a {
+                margin-bottom: 10px;
+            }
+
+            .shop-btn {
+                padding: 20px 20px;
+                font-size: 0.8rem;
+            }
+
+            .login-btn {
+                top: 5%;
+                right: 3%;
+            }
+
+            .nav-menu {
+                top: 5%;
+                left: 17%;
+                width: 40%;
+                height: auto;
+            }
+
+            .hamburger,
+           .close-btn {
+                top: 3.9%;
+                left: 7%;
+                width: 30px;
+                height: 30px;
+            }
+
+            .hamburger img,
+            .close-btn img {
+                width: 40px;
+                height: 40px;
+            }
+        }
     </style>
 </head>
 <body>
